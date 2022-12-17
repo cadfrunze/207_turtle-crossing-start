@@ -7,7 +7,15 @@ from scoreboard import Scoreboard
 screen = Screen()
 screen.setup(width=600, height=600)
 screen.tracer(0)
+screen.listen()
+playerul = Player()
 
+
+def move_up():
+    playerul.move_up()
+
+
+screen.onkey(key='Up', fun=move_up)
 game_is_on = True
 while game_is_on:
     time.sleep(0.1)
