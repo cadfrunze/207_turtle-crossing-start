@@ -48,6 +48,12 @@ while game_is_on:
     car.create_car()
     screen.update()
     car.move_cars()
+    for x_cor in car.all_cars:
+        if x_cor.distance(playerul) <= 20:
+            screen.tracer(0)
+            scorul.game_over()
+            playerul.return_home()
+            screen.update()
     if playerul.ycor() >= 240:
         screen.tracer(0)
         scorul.modify_scor()
