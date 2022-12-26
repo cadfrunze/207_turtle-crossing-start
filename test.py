@@ -7,4 +7,3 @@ for char in range(len(a) - 1, -1, -1):
         new_a += a[char]
 
 print(new_a)
-
