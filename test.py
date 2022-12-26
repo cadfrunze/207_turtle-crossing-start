@@ -1,3 +1,2 @@
-import random
 
-a = random.randint(1, 100)
+print(type(print()))
