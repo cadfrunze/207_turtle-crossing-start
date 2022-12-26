@@ -6,6 +6,7 @@ from scoreboard import Scoreboard
 
 screen = Screen()
 screen.setup(width=600, height=600)
+screen.title(titlestring='Traverseaza Broscoiul! Muhahaha')
 screen.tracer(0)
 screen.listen()
 playerul = Player()
@@ -48,8 +49,8 @@ while game_is_on:
     car.create_car()
     screen.update()
     car.move_cars()
-    for x_cor in car.all_cars:
-        if x_cor.distance(playerul) <= 20:
+    for masina in car.all_cars:
+        if masina.distance(playerul) <= 20:
             screen.tracer(0)
             scorul.game_over()
             playerul.return_home()
