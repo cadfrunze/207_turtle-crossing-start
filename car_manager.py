@@ -18,7 +18,7 @@ class CarManager:
             car.penup()
             car.shapesize(stretch_len=2, stretch_wid=1)
             car.color(random.choice(COLORS))
-            y_cor = random.randint(-250, 250)
+            y_cor = random.randint(-250, 220)
             car.goto(x=300, y=y_cor)
             self.all_cars.append(car)
 

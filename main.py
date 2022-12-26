@@ -10,6 +10,7 @@ screen.tracer(0)
 screen.listen()
 playerul = Player()
 car = CarManager()
+scorul = Scoreboard()
 
 
 def move_up():
@@ -23,6 +24,12 @@ while game_is_on:
     car.create_car()
     screen.update()
     car.move_cars()
+    if playerul.ycor() >= 240:
+        screen.tracer(0)
+        scorul.modify_scor()
+        playerul.return_home()
+        screen.update()
+
 
 
 
