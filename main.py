@@ -20,6 +20,10 @@ screen.onkey(key='Up', fun=move_up)
 game_is_on = True
 while game_is_on:
     time.sleep(0.1)
+    car.create_car()
     screen.update()
-    car.move()
+    car.move_cars()
+
+
+
 
