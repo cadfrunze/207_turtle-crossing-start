@@ -61,6 +61,5 @@ while game_is_on:
         screen.tracer(0)
         scorul.modify_scor()
         car.ran_nr -= 1
-        print(car.ran_nr)
         playerul.finish_line()
         screen.update()

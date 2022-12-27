@@ -28,3 +28,4 @@ class Scoreboard(Turtle):
         time.sleep(1)
         self.clear()
         self.print_scor()
+

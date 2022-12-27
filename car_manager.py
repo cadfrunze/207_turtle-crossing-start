@@ -10,7 +10,7 @@ MOVE_INCREMENT = 10
 class CarManager:
     def __init__(self):
         self.all_cars = []
-        self.ran_nr = 15
+        self.ran_nr = 10
 
     def create_car(self):
         random_sansa = random.randint(1, self.ran_nr)
