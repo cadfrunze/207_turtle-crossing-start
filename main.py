@@ -58,5 +58,7 @@ while game_is_on:
     if playerul.ycor() >= 240:
         screen.tracer(0)
         scorul.modify_scor()
+        car.ran_nr -= 1
+        print(car.ran_nr)
         playerul.finish_line()
         screen.update()

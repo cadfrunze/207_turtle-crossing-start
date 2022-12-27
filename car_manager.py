@@ -10,9 +10,10 @@ MOVE_INCREMENT = 10
 class CarManager:
     def __init__(self):
         self.all_cars = []
+        self.ran_nr = 15
 
     def create_car(self):
-        random_sansa = random.randint(1, 6)
+        random_sansa = random.randint(1, self.ran_nr)
         if random_sansa == 1:
             car = Turtle('square')
             car.penup()
