@@ -14,7 +14,7 @@ class Scoreboard(Turtle):
 
     def print_scor(self):
         self.goto(x=0, y=250)
-        self.write(arg=f'Level: {self.scor}', align='Center', move=False, font=FONT)
+        self.write(arg=f'Level:{self.scor}', align='Center', move=False, font=FONT)
 
     def modify_scor(self):
         self.clear()

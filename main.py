@@ -50,7 +50,7 @@ while game_is_on:
     screen.update()
     car.move_cars()
     for masina in car.all_cars:
-        if masina.distance(playerul) <= 20:
+        if masina.distance(playerul) <= 23:
             screen.tracer(0)
             scorul.game_over()
             playerul.return_home()
