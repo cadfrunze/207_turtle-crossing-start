@@ -49,12 +49,14 @@ while game_is_on:
     car.create_car()
     screen.update()
     car.move_cars()
+    # Detect player cu masina
     for masina in car.all_cars:
         if masina.distance(playerul) <= 20:
             screen.tracer(0)
             scorul.game_over()
             playerul.return_home()
             screen.update()
+    # Playerul traverseaza cu succes
     if playerul.ycor() >= 240:
         screen.tracer(0)
         scorul.modify_scor()
