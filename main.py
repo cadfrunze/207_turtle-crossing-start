@@ -46,21 +46,21 @@ screen.onkey(key='Right', fun=move_right)
 game_is_on = True
 while game_is_on:
     time.sleep(0.1)
-    car.create_car()
     screen.update()
+    car.create_car()
     car.move_cars()
     # Detect player cu masina
     for masina in car.all_cars:
-        if masina.distance(playerul) <= 20:
-            screen.tracer(0)
+        if masina.distance(playerul) < 20:
+            # screen.tracer(0)
             scorul.game_over()
             playerul.return_home()
-            screen.update()
+            # screen.update()
     # Playerul traverseaza cu succes
     if playerul.finish_line():
-        screen.tracer(0)
+        # screen.tracer(0)
         scorul.modify_scor()
         car.ran_nr -= 1
         playerul.return_home()
         car.level_up()
-        screen.update()
+        # screen.update()
