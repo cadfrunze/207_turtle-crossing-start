@@ -30,4 +30,6 @@ class Player(Turtle):
 
     def finish_line(self):
         if self.ycor() >= FINISH_LINE_Y:
-            self.return_home()
+            return True
+        else:
+            return False

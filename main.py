@@ -57,9 +57,10 @@ while game_is_on:
             playerul.return_home()
             screen.update()
     # Playerul traverseaza cu succes
-    if playerul.ycor() >= 240:
+    if playerul.finish_line():
         screen.tracer(0)
         scorul.modify_scor()
         car.ran_nr -= 1
-        playerul.finish_line()
+        playerul.return_home()
+        car.level_up()
         screen.update()
